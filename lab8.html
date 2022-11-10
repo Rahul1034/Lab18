@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(13, 12, 12);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(42, 37, 37);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(232, 23, 23, 0.867);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header h1 {text-align: center;
+  font-size: 50px;
+  color: rgba(188, 9, 0, 0.845);}
+.header img {
+        float: left;
+        width: 80px;
+        height: 80px;
+    }
+    body {
+  font-family: "Lato", sans-serif;
+  background-color: #111;
+  
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px ) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.social-footer {
+    padding: 1rem;
+    background: rgb(34, 33, 33);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+.social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+    
+  }
+  
+  .social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+    
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+    color: whitesmoke;
+    transition: color 0.3s ease-in;
+    
+  }
+  .social-footer-icons{
+    color: blue;
+  }
+  .fa-facebook{
+    color:rgb(13, 12, 12);
+  }
+
+</style>
+<style>
+    
+    </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://www.lawctopus.com/wp-content/uploads/2021/02/Bennett-Logo-VerticalColor-993x1024.png">
+    <h1>Bennett University</h1>
+  </div>
+  <br>  
+<div class="navbar">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <span style="font-size:30px;cursor:pointer" float="left" onclick="openNav()">&#9776; </span>
+  <div class="dropdown">
+    <button class="dropbtn">Home
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">About Us</a>
+      <a href="#">Mission</a>
+      <a href="#">Team</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Activities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Sports</a>
+      <a href="#">Academics</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Facilities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Sports Complex</a>
+      <a href="#">Library</a>
+      <a href="#">Hostels</a>
+      <a href="#">Cafeteria</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Clubs 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Full Stack</a>
+      <a href="#">Dev OPS</a>
+      <a href="#">AI</a>
+      <a href="#">Block Chain</a>
+    </div>
+  </div> 
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "180px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<img src="https://applications.bennett.edu.in/downloads/62c57519e27e0813648985_banner.jpg" width="100%" height="auto"; max-width="100%">
+<footer class="social-footer">
+  <div class="social-footer-left">
+    <a href="#">
+      <img class="logo" src="https://www.lawctopus.com/wp-content/uploads/2021/02/Bennett-Logo-VerticalColor-993x1024.png" width="100px" height="100px">
+    </a>
+  </div>
+  <div class="social-footer-icons">
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+    </ul>
+    
+  </div>
+</footer>
+
+
+</body>
+</html>
